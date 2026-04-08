@@ -25,24 +25,24 @@ export const navItems = [
 
 export const problemPoints = [
   {
-    title: "Bad attribution hides what is actually creating pipeline",
+    title: "You are funding channels that are not actually driving revenue",
     body:
-      "When source-of-truth systems disagree, revenue teams keep funding channels they cannot truly measure."
+      "Bad attribution makes weak channels look productive, so budget keeps flowing to spend that does not produce pipeline."
   },
   {
-    title: "Anonymous traffic never turns into accountable demand",
+    title: "High-intent visitors never become pipeline because they remain anonymous",
     body:
-      "High-intent visitors hit your site, disappear, and leave your growth team optimizing around incomplete buyer signals."
+      "The right buyers are already hitting your site. You just are not identifying enough of them to turn that demand into revenue."
   },
   {
-    title: "Paid spend leaks into the wrong audiences",
+    title: "Your attribution is wrong, so your decisions are wrong",
     body:
-      "Weak identity resolution and poor conversion feedback force platforms to learn from noisy data instead of qualified revenue outcomes."
+      "If the measurement layer is broken, every budget, targeting, and forecast decision built on top of it gets weaker."
   },
   {
-    title: "GTM decisions get made from partial data",
+    title: "You are optimizing based on incomplete or misleading data",
     body:
-      "Forecasting, targeting, and channel planning all degrade when CRM, analytics, and ad systems are out of sync."
+      "Growth teams move fast, but when CRM, analytics, and ad platform data do not line up, they optimize against the wrong signals."
   }
 ] as const;
 
@@ -51,19 +51,19 @@ export const steps = [
     number: "01",
     title: "Diagnose with the Bad Data Test",
     body:
-      "Pressure-test attribution, traffic identity, measurement coverage, and revenue signal quality in a fast executive diagnostic."
+      "Identify where revenue is being lost across attribution, traffic identity, and revenue capture."
   },
   {
     number: "02",
     title: "Quantify recoverable revenue",
     body:
-      "The Revenue Recovery Audit sizes the Bad Data Tax in pipeline, spend efficiency, and lost decision quality."
+      "Show exactly how much pipeline and paid spend is recoverable before you increase budget."
   },
   {
     number: "03",
     title: "Implement the Data Growth Stack",
     body:
-      "DGE fixes the underlying data architecture so your growth team can target, measure, and scale from cleaner revenue signals."
+      "Fix attribution, targeting, and identity so the revenue you are already paying for stops leaking."
   }
 ] as const;
 
@@ -94,37 +94,42 @@ export const faqs = [
   {
     question: "What is the Bad Data Test?",
     answer:
-      "It is a diagnostic designed to uncover where bad attribution, weak identity resolution, and incomplete revenue data are suppressing paid performance and pipeline visibility."
+      "It is a short diagnostic that surfaces where bad attribution, anonymous traffic, and broken revenue data are hiding wasted spend and missed pipeline."
   },
   {
     question: "Who is this for?",
     answer:
-      "The offer is built for B2B SaaS companies with real paid media budgets, an internal growth team, and a need for cleaner revenue signals."
+      "It is built for B2B SaaS companies in the $5M-$100M ARR range that spend $50k-$500k per month on paid media and have an in-house growth team."
+  },
+  {
+    question: "How much revenue can we recover?",
+    answer:
+      "That depends on how severe the Bad Data Tax is, but many qualified teams uncover meaningful recoverable pipeline, misattributed conversions, and wasted paid spend before they buy more traffic."
+  },
+  {
+    question: "Why can’t I see this in my current dashboards?",
+    answer:
+      "Because most dashboards only report what is captured, not what is missing. If identity resolution, attribution, or conversion feedback is broken, your reporting can look acceptable while revenue still leaks underneath it."
   },
   {
     question: "What happens after the test?",
     answer:
-      "Qualified teams get a clearer view of likely measurement gaps and can move into a Revenue Recovery Audit to quantify the opportunity."
+      "Qualified teams get a clearer view of where revenue is being lost. From there, the next step is usually a Revenue Recovery Audit to quantify the opportunity in dollars."
   },
   {
     question: "What is a Revenue Recovery Audit?",
     answer:
-      "It is a paid engagement focused on sizing how much pipeline visibility, ad efficiency, and targeting accuracy can be recovered by fixing bad data."
+      "It is a paid audit focused on measuring how much pipeline, spend efficiency, and targeting accuracy can be recovered by fixing bad data."
   },
   {
-    question: "Do you work with non-SaaS companies?",
+    question: "How long does implementation take?",
     answer:
-      "No. DGE is positioned specifically for B2B SaaS companies with complex acquisition, attribution, and CRM data flows."
-  },
-  {
-    question: "What kinds of data problems do you fix?",
-    answer:
-      "Common issues include broken attribution, weak lead-source hygiene, missing conversion feedback, poor identity coverage, anonymous traffic loss, and disconnected CRM-to-ad platform signals."
+      "That depends on the severity and spread of the data issues, but the goal is straightforward: fix the measurement and identity gaps fast enough to recover revenue before more budget gets wasted."
   }
 ] as const;
 
 export const trustSignals = [
-  "Built for revenue-focused growth teams",
-  "Focused on revenue recovery, not vanity metrics",
-  "Case studies coming soon"
+  "Takes 2 minutes",
+  "Identifies hidden pipeline and wasted spend",
+  "Built for B2B SaaS ($5M-$100M ARR)"
 ] as const;

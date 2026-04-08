@@ -43,7 +43,10 @@ export default function HomePage() {
               It&apos;s Hard to Grow a Company on Bad Data
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72 md:text-xl">
-              DGE helps B2B SaaS companies recover wasted ad spend and hidden pipeline by fixing bad data across acquisition, attribution, and revenue systems.
+              We help B2B SaaS companies recover 20-40% of revenue lost due to bad attribution, anonymous traffic, and broken data systems.
+            </p>
+            <p className="mt-5 max-w-2xl rounded-[1.5rem] border border-aqua/20 bg-aqua/10 px-5 py-4 text-base font-semibold leading-7 text-white">
+              If you&apos;re spending $100k/month on paid media, there&apos;s a high chance $20k-$40k is being misattributed or wasted.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <CtaLink href={siteConfig.primaryCta.href} label={siteConfig.primaryCta.label} size="lg" external />
@@ -55,6 +58,12 @@ export default function HomePage() {
                   {signal}
                 </div>
               ))}
+            </div>
+            <div className="mt-8 max-w-2xl rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-5">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-aqua">Example</p>
+              <p className="mt-3 text-base leading-7 text-white/80">
+                A SaaS company spending $120k/month uncovered 28% untracked conversions and $35k/month in recoverable pipeline.
+              </p>
             </div>
           </Reveal>
           <Reveal delay={0.1} className="relative">
@@ -70,14 +79,14 @@ export default function HomePage() {
                   <div className="rounded-[1.5rem] border border-aqua/20 bg-aqua/10 p-5">
                     <p className="text-sm text-aqua">Primary lever</p>
                     <p className="mt-3 font-display text-3xl font-bold text-white">Revenue Recovery</p>
-                    <p className="mt-2 text-sm text-white/68">Not more channel activity. Better data quality across the system.</p>
+                    <p className="mt-2 text-sm text-white/68">Not more activity. Recover the revenue your current system is already losing.</p>
                   </div>
                 </div>
                 <div className="mt-4 rounded-[1.5rem] border border-white/10 bg-[#091734] p-5">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-sm text-white/60">Pipeline visibility</p>
-                      <p className="mt-2 font-display text-2xl font-bold text-white">Anonymous traffic mapped to revenue</p>
+                      <p className="text-sm text-white/60">What bad data hides</p>
+                      <p className="mt-2 font-display text-2xl font-bold text-white">Misattributed spend. Missing contacts. Hidden pipeline.</p>
                     </div>
                     <div className="rounded-full bg-aqua/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-aqua">
                       DGE Stack
@@ -118,7 +127,7 @@ export default function HomePage() {
 
       <section id="problem" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <Reveal>
-          <SectionHeading eyebrow="The Problem" title="Bad data does not just break attribution. It kills growth." description="The Bad Data Tax shows up in wasted spend, lost pipeline visibility, and growth decisions made from partial information." />
+          <SectionHeading eyebrow="The Problem" title="You&apos;re Losing Revenue. You Just Can&apos;t See It." description="Bad data is quietly costing you 20-30% of your revenue." />
         </Reveal>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {problemPoints.map((point, index) => (
@@ -131,11 +140,30 @@ export default function HomePage() {
             </Reveal>
           ))}
         </div>
+        <Reveal delay={0.18}>
+          <p className="mt-8 text-lg font-semibold text-white">You can&apos;t optimize what you can&apos;t see.</p>
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <Reveal>
+          <div className="rounded-[2.25rem] border border-white/10 bg-white/[0.04] p-8 md:p-12">
+            <SectionHeading
+              eyebrow="Bad Data Tax"
+              title="The Bad Data Tax Is Real"
+              description="Most B2B SaaS companies are losing 20-30% of revenue due to broken attribution, identity gaps, and incomplete data."
+            />
+            <div className="mt-8 max-w-3xl text-lg leading-8 text-white/74">
+              <p>They don&apos;t realize it because their dashboards look good enough.</p>
+              <p className="mt-4 font-semibold text-white">But underneath: Revenue is leaking.</p>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       <section id="how-it-works" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <Reveal>
-          <SectionHeading eyebrow="How It Works" title="Find the revenue you are already paying for" description="A simple three-step path from diagnosis to quantified recovery to implementation." />
+          <SectionHeading eyebrow="How It Works" title="We Find the Revenue You&apos;re Already Paying For" description="We don&apos;t guess. We quantify exactly what you&apos;re losing." />
         </Reveal>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {steps.map((step, index) => (
@@ -156,7 +184,12 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.02] p-8 md:p-12">
           <Reveal>
-            <SectionHeading eyebrow="Revenue Recovery Outcomes" title="Recover lost pipeline before you buy more traffic" description="DGE is built to improve revenue signal quality across your demand system so paid media can perform against cleaner data." />
+            <SectionHeading eyebrow="Outcomes" title="Recover Lost Revenue Before You Buy More Traffic" description="Most teams scale spend before fixing data. That just scales waste." />
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="mt-6 text-2xl font-semibold text-aqua md:text-3xl">
+              Recover $20k-$200k/month in lost pipeline before increasing budget.
+            </p>
           </Reveal>
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
             {outcomes.map((outcome, index) => {
@@ -177,7 +210,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <Reveal>
-            <SectionHeading eyebrow="Qualification" title="Built for a very specific buyer" description="DGE is not a generalist marketing shop. The offer is designed for B2B SaaS teams with enough complexity and spend for bad data to become a revenue problem." />
+            <SectionHeading eyebrow="Qualification" title="Built for a Specific Type of Company" description="If you don&apos;t meet this criteria, this likely won&apos;t work for you." />
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">
             <Reveal delay={0.08}>
@@ -200,13 +233,13 @@ export default function HomePage() {
         <Reveal>
           <div className="rounded-[2.5rem] border border-aqua/20 bg-[linear-gradient(135deg,rgba(28,196,175,0.18),rgba(9,22,50,0.94))] p-8 shadow-glow md:p-12">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-aqua">Main CTA</p>
-            <h2 className="mt-4 max-w-3xl font-display text-4xl font-bold tracking-tight text-white md:text-5xl">How much revenue are you losing to bad data?</h2>
+            <h2 className="mt-4 max-w-4xl font-display text-4xl font-bold tracking-tight text-white md:text-5xl">How Much Revenue Are You Losing Every Month Without Realizing It?</h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/78">
-              Start with the free diagnostic. The Bad Data Test helps qualified teams see where wasted spend, missing identity, and broken measurement are suppressing growth.
+              Most companies discover 20-30% of their spend or pipeline is misattributed.
             </p>
+            <p className="mt-3 max-w-2xl text-lg leading-8 text-white/78">You won&apos;t see this in your dashboards.</p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <CtaLink href={siteConfig.primaryCta.href} label={siteConfig.primaryCta.label} size="lg" external />
-              <CtaLink href={siteConfig.secondaryCta.href} label={siteConfig.secondaryCta.label} size="lg" external variant="secondary" />
             </div>
           </div>
         </Reveal>
@@ -214,7 +247,23 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <Reveal>
-          <SectionHeading eyebrow="Book a Call" title="Get a direct view into your Revenue Recovery opportunity" description="Use the embedded booking flow below or open the calendar directly if your browser blocks embeds." />
+          <SectionHeading eyebrow="Book a Call" title="See Your Revenue Recovery Opportunity" description="This is not a sales call." />
+        </Reveal>
+        <Reveal delay={0.04}>
+          <div className="mt-8 rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+            <p className="text-base leading-7 text-white/76">On this call, we:</p>
+            <ul className="mt-5 space-y-3 text-base leading-7 text-white">
+              <li>• Review your data and attribution setup</li>
+              <li>• Identify where revenue is being lost</li>
+              <li>• Estimate recoverable pipeline and wasted spend</li>
+            </ul>
+            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-aqua">
+              Best for: B2B SaaS companies spending $50k+/month on paid media
+            </p>
+            <div className="mt-6">
+              <CtaLink href={siteConfig.secondaryCta.href} label="Book Intro Call" external />
+            </div>
+          </div>
         </Reveal>
         <div className="mt-12">
           <Reveal delay={0.08}>
@@ -247,9 +296,9 @@ export default function HomePage() {
         <Reveal>
           <div className="rounded-[2.5rem] border border-white/10 bg-white/[0.04] px-8 py-12 text-center md:px-12">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-aqua">Final CTA</p>
-            <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-white md:text-5xl">It&apos;s hard to grow a company on bad data.</h2>
+            <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-white md:text-5xl">You&apos;re Already Paying for This Lost Revenue</h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/70">
-              Take the Bad Data Test and find the revenue your team is already paying to lose.
+              You just can&apos;t see it yet.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <CtaLink href={siteConfig.primaryCta.href} label={siteConfig.primaryCta.label} size="lg" external />
