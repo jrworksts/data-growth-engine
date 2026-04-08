@@ -33,8 +33,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
-          <CtaLink href={siteConfig.secondaryCta.href} label={siteConfig.secondaryCta.label} variant="secondary" external />
-          <CtaLink href={siteConfig.primaryCta.href} label={siteConfig.primaryCta.label} external />
+          <CtaLink href={siteConfig.secondaryCta.href} label="Book Call" external />
         </div>
         <Button className="lg:hidden" variant="ghost" size="sm" onClick={() => setOpen((v) => !v)} aria-label={open ? "Close navigation menu" : "Open navigation menu"}>
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -49,8 +48,8 @@ export function SiteHeader() {
               </Link>
             ))}
             <div className="mt-4 grid gap-3">
-              <CtaLink href={siteConfig.primaryCta.href} label={siteConfig.primaryCta.label} external />
-              <CtaLink href={siteConfig.secondaryCta.href} label={siteConfig.secondaryCta.label} variant="secondary" external />
+              <CtaLink href={siteConfig.secondaryCta.href} label="Book Call" external />
+              <CtaLink href={siteConfig.primaryCta.href} label={siteConfig.primaryCta.label} variant="secondary" external />
             </div>
           </div>
         </div>

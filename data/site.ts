@@ -16,11 +16,11 @@ export const siteConfig = {
 } as const;
 
 export const navItems = [
-  { label: "Problem", href: "/#problem" },
-  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Results", href: "/#results" },
+  { label: "Resources", href: "/#resources" },
   { label: "Bad Data Test", href: "/bad-data-test" },
-  { label: "Book a Call", href: "/book-call" },
-  { label: "About", href: "/about" }
+  { label: "Book Call", href: "/book-call" }
 ] as const;
 
 export const problemPoints = [
