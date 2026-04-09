@@ -52,7 +52,7 @@ export default function HomePage() {
               </span>
             </div>
             <h1 className="mt-8 max-w-4xl font-display text-5xl font-bold tracking-tight text-white text-balance md:text-7xl">
-              We Help B2B SaaS Recover 7-Figure Revenue Leaks Caused by Bad Data
+              We Help B2B SaaS Recover 6-Figure Revenue Leaks Caused by Bad Data
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72 md:text-xl">
               For teams spending $50k-$500k/month on paid ads. We fix identity, audiences, and attribution so your existing traffic produces more qualified pipeline without increasing spend.
