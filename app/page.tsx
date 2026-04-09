@@ -411,11 +411,11 @@ export default function HomePage() {
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-                  className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 transition hover:border-aqua/50 hover:bg-white/[0.06]"
+                  className="flex h-full min-h-[220px] flex-col rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 transition hover:border-aqua/50 hover:bg-white/[0.06]"
                 >
                   <p className="text-lg font-semibold text-white">{item.title}</p>
                   <p className="mt-3 text-sm leading-7 text-white/65">{item.body}</p>
-                  <span className="mt-5 inline-flex font-semibold text-aqua">Open →</span>
+                  <span className="mt-auto inline-flex pt-6 font-semibold text-aqua">Open →</span>
                 </Link>
               </Reveal>
             ))}
